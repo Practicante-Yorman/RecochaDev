@@ -1,5 +1,82 @@
-﻿<h3>Component</h3>
+﻿
+.not-found {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #F8F0F3;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-@code {
+.not-found-card {
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    padding: 50px 30px;
+}
 
+.not-found-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #F0E0E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .not-found-icon i {
+        font-size: 45px;
+        color: #702C4B;
+    }
+
+.not-found-card h1 {
+    font-size: clamp(90px, 15vw, 150px);
+    font-weight: 800;
+    color: #702C4B;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.not-found-card h2 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #24141F;
+    margin-bottom: 15px;
+}
+
+.not-found-card p {
+    color: #7B6A72;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn-home {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 28px;
+    background: #702C4B;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.2s;
+}
+
+    .btn-home:hover {
+        background: #8F3A61;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+.not-found-footer {
+    display: block;
+    margin-top: 50px;
+    color: #9C8792;
+    font-size: 13px;
 }
