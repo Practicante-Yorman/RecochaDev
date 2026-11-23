@@ -1,4 +1,6 @@
-﻿@inherits LayoutComponentBase
+﻿@using StockMaster.Components.Layout
+@inherits LayoutComponentBase
+
 
 <div class="page">
     <div class="sidebar">
@@ -7,12 +9,13 @@
 
     <main>
         <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">Abouttt</a>
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">Sobre</a>
         </div>
 
         <article class="content px-4">
             @Body
         </article>
+        <Footer />
     </main>
 </div>
 
