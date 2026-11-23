@@ -1,105 +1,209 @@
-.navbar-toggler {
-    appearance: none;
-    cursor: pointer;
-    width: 3.5rem;
-    height: 2.5rem;
-    color: white;
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") no-repeat center/1.75rem rgba(255, 255, 255, 0.1);
+
+/* ========================================
+   EUPHORIA - NAVBAR LATERAL
+   Estilo: Velvet Noir
+======================================== */
+
+/* Contenedor principal */
+.euphoria-sidebar {
+    min-height: 100vh;
+    height: 100%;
+    background: #21131D;
+    color: #FFFFFF;
+    padding: 26px 16px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
 }
 
-.navbar-toggler:checked {
-    background-color: rgba(255, 255, 255, 0.5);
+/* ========================================
+   LOGO Y NOMBRE
+======================================== */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 10px 24px;
 }
 
-.top-row {
-    min-height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+.brand-icon {
+    width: 44px;
+    height: 44px;
+    background: #69334E;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
-.navbar-brand {
-    font-size: 1.1rem;
-}
-
-.bi {
-    display: inline-block;
-    position: relative;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-right: 0.75rem;
-    top: -1px;
-    background-size: cover;
-}
-
-.bi-house-door-fill-nav-menu {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-house-door-fill' viewBox='0 0 16 16'%3E%3Cpath d='M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z'/%3E%3C/svg%3E");
-}
-
-.bi-plus-square-fill-nav-menu {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-square-fill' viewBox='0 0 16 16'%3E%3Cpath d='M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z'/%3E%3C/svg%3E");
-}
-
-.bi-list-nested-nav-menu {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list-nested' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
-}
-
-.nav-item {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
-}
-
-    .nav-item:first-of-type {
-        padding-top: 1rem;
+    .brand-icon i {
+        font-size: 23px;
+        color: #F4C3D5;
     }
 
-    .nav-item:last-of-type {
-        padding-bottom: 1rem;
+.brand-info {
+    min-width: 0;
+}
+
+    .brand-info h4 {
+        font-family: 'Playfair Display', serif;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        line-height: 1.2;
+        margin: 0;
+        color: #FFFFFF;
     }
 
-    .nav-item ::deep .nav-link {
-        color: #d7d7d7;
-        background: none;
-        border: none;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-        width: 100%;
-    }
-
-.nav-item ::deep a.active {
-    background-color: rgba(255,255,255,0.37);
-    color: white;
-}
-
-.nav-item ::deep .nav-link:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
-
-.nav-scrollable {
-    display: none;
-}
-
-.navbar-toggler:checked ~ .nav-scrollable {
-    display: block;
-}
-
-@media (min-width: 641px) {
-    .navbar-toggler {
-        display: none;
-    }
-
-    .nav-scrollable {
-        /* Never collapse the sidebar for wide screens */
+    .brand-info span {
         display: block;
-
-        /* Allow sidebar to scroll for tall menus */
-        height: calc(100vh - 3.5rem);
-        overflow-y: auto;
+        color: #C7A5B6;
+        font-size: 9px;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        line-height: 1.5;
+        margin-top: 5px;
     }
+
+/* ========================================
+   SEPARADORES Y TÍTULOS
+======================================== */
+
+.menu-divider {
+    height: 1px;
+    background: #49313F;
+    margin: 0 8px 24px;
+    flex-shrink: 0;
 }
+
+.menu-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #AA8D9C;
+    padding: 0 12px;
+    margin-bottom: 14px;
+}
+
+/* ========================================
+   ENLACES DE NAVEGACIÓN
+======================================== */
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/* ::deep permite aplicar estilos al enlace
+   <a> generado por NavLink en Blazor */
+
+::deep .menu-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 15px;
+    color: #EADCE2;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+    /* Iconos */
+    ::deep .menu-link i {
+        font-size: 19px;
+        color: #DBA9BF;
+        width: 22px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+
+    /* Al pasar el mouse */
+    ::deep .menu-link:hover {
+        background: #392130;
+        color: #FFFFFF;
+    }
+
+        ::deep .menu-link:hover i {
+            color: #FFFFFF;
+        }
+
+    /* Enlace seleccionado */
+    ::deep .menu-link.active {
+        background: #73314F;
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+
+        ::deep .menu-link.active i {
+            color: #FFFFFF;
+        }
+
+    /* Navegación con teclado */
+    ::deep .menu-link:focus-visible {
+        outline: 2px solid #D8A4B6;
+        outline-offset: 2px;
+    }
+
+/* ========================================
+   PARTE INFERIOR DEL NAVBAR
+======================================== */
+
+.sidebar-bottom {
+    margin-top: auto;
+    padding-top: 36px;
+}
+
+    .sidebar-bottom .menu-divider {
+        margin-bottom: 20px;
+    }
+
+/* Perfil */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 8px;
+}
+
+.user-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #432538;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+    .user-avatar i {
+        color: #E3B8C9;
+        font-size: 19px;
+    }
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+
+    .user-info strong {
+        font-size: 13px;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+
+    .user-info small {
+        font-size: 11px;
+        color: #AA8D9C;
+        line-height: 1.4;
+    }
