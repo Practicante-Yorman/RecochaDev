@@ -1,34 +1,64 @@
 ﻿
-<div class="bg-dark text-white p-3 min-vh-100">
-    <h4 class="fw-bold mb-4">📦 Euphoria</h4>
+<div class="euphoria-sidebar">
 
-    <nav class="nav flex-column gap-2">
+    <div class="brand">
+        <div class="brand-icon">
+            <i class="bi bi-heart"></i>
+        </div>
 
-        <NavLink class="nav-link text-white"
+        <div class="brand-info">
+            <h4>Euphoria</h4>
+            <span>GESTIÓN DE INVENTARIOS</span>
+        </div>
+    </div>
+
+    <div class="menu-divider"></div>
+
+    <p class="menu-label">MENÚ PRINCIPAL</p>
+
+    <nav class="menu-links">
+
+        <NavLink class="menu-link"
                  href=""
                  Match="NavLinkMatch.All">
-            <i class="bi bi-columns"></i>
-            Inicio
+            <i class="bi bi-columns-gap"></i>
+            <span>Inicio</span>
         </NavLink>
 
-        <NavLink class="nav-link text-white"
-                 href="products">
+        <NavLink class="menu-link" href="products">
             <i class="bi bi-bag-heart"></i>
-             Productos
+            <span>Productos</span>
         </NavLink>
 
-        <NavLink class="nav-link text-white"
+        <NavLink class="menu-link"
                  href="categories"
                  Match="NavLinkMatch.All">
-            <i class="bi bi-layers"></i>  
-            Categorias
+            <i class="bi bi-layers"></i>
+            <span>Categorías</span>
         </NavLink>
 
-        <NavLink class="nav-link text-white"
+        <NavLink class="menu-link"
                  href="movements"
                  Match="NavLinkMatch.All">
-            <i class="bi bi-arrow-left-right"></i> 
-            Movimientos
+            <i class="bi bi-arrow-left-right"></i>
+            <span>Movimientos</span>
         </NavLink>
+
     </nav>
+
+    <div class="sidebar-bottom">
+        <div class="menu-divider"></div>
+
+        <div class="user-profile">
+            <div class="user-avatar">
+                <i class="bi bi-person"></i>
+            </div>
+
+            <div class="user-info">
+                <strong>Administrador</strong>
+                <small>Euphoria Inventory</small>
+            </div>
+        </div>
+    </div>
+
 </div>
